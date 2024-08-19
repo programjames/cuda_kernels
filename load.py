@@ -8,6 +8,8 @@ custom_kernel = load(
     verbose=True
 )
 
+print(custom_kernel)
+
 def test(a, b):
     # Ensure the tensors are on the GPU
     a = a.contiguous().cuda()
